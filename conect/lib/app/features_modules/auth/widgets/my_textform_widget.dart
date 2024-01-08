@@ -12,7 +12,7 @@ class MyTextFormField extends StatelessWidget {
     this.togglePassword,
     required this.obsecureText,
     required this.onChanged,
-    required this.validator,
+    this.validator,
   });
 
   final TextEditingController controller;

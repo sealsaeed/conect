@@ -54,7 +54,7 @@ class _MyFromFieldsState extends State<MyFromFields> {
                   return _authvalidators.emailValidator(value);
                 },
               ),
-              SizedBox(height: context.screenHeight * 0.5),
+              SizedBox(height: context.screenHeight * 0.05),
               MyTextFormField(
                 controller: userNameController,
                 MyFoucsNode: userNameNode,
@@ -65,7 +65,7 @@ class _MyFromFieldsState extends State<MyFromFields> {
                 onChanged: null,
                 validator: (input) => _authvalidators.userNameValidator(input),
               ),
-              SizedBox(height: context.screenHeight * 0.5),
+              SizedBox(height: context.screenHeight * 0.05),
               MyTextFormField(
                 controller: passwordController,
                 MyFoucsNode: passwordNode,

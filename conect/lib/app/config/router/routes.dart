@@ -1,5 +1,6 @@
 import 'package:conect/app/config/router/named_routes.dart';
 import 'package:conect/app/features_modules/auth/views/login.dart';
+import 'package:conect/app/features_modules/auth/views/register.dart';
 import 'package:conect/app/features_modules/auth/views/splashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -27,6 +28,16 @@ abstract class AppRouter {
         pageBuilder: (context, state) => NoTransitionPage(
           key: state.pageKey,
           child: const SplashScreen(),
+        ),
+      ),
+      GoRoute(
+        // root its a global key to control any screen im calling
+        parentNavigatorKey: rootNavigatorKey,
+        path: "/${MyNamedRoutes.register}",
+        name: MyNamedRoutes.register,
+        pageBuilder: (context, state) => NoTransitionPage(
+          key: state.pageKey,
+          child: RegisterScreen(),
         ),
       ),
       GoRoute(

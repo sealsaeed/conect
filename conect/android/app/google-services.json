@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "671001901355",
+    "firebase_url": "https://sundusproject-a5c87-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sundusproject-a5c87",
+    "storage_bucket": "sundusproject-a5c87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671001901355:android:f5e9b4a2fa6da0590b2d6e",
+        "android_client_info": {
+          "package_name": "com.example.conect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoBxu6fDAlNkxV3W68VbNMNK7pHiDgrcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

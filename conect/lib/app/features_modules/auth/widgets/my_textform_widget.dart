@@ -1,3 +1,4 @@
+import 'package:conect/app/core/extentions/build_context_extention.dart';
 import 'package:flutter/material.dart';
 
 class MyTextFormField extends StatelessWidget {
@@ -23,29 +24,32 @@ class MyTextFormField extends StatelessWidget {
   final Icon? suffexIcon;
   final Function()? togglePassword;
   final bool obsecureText;
-  final String? Function(String?)? onChanged;
+  final Function(String?)? onChanged;
   final String? Function(String?)? validator;
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: controller,
-      focusNode: MyFoucsNode,
-      textInputAction: myTextInputAction,
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+    return SizedBox(
+      height: context.screenHeight * 0.07,
+      child: TextFormField(
+        controller: controller,
+        focusNode: MyFoucsNode,
+        textInputAction: myTextInputAction,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          label: Text(labelText),
+          prefixIcon: prefIcon,
+          suffix: IconButton(
+            onPressed: togglePassword,
+            icon: suffexIcon ?? const SizedBox(),
+          ),
         ),
-        label: Text(labelText),
-        prefixIcon: prefIcon,
-        suffix: IconButton(
-          onPressed: togglePassword,
-          icon: suffexIcon ?? const SizedBox(),
-        ),
+        obscureText: obsecureText,
+        validator: validator,
+        onChanged: onChanged,
       ),
-      obscureText: obsecureText,
-      validator: validator,
-      onChanged: onChanged,
     );
   }
 }

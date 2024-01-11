@@ -27,6 +27,7 @@ final authStateProvider = StreamProvider<User?>((ref) {
   return authRepository.authStateChanges;
 });
 
+final checkIFauthinticated = FutureProvider((ref) => authStateProvider);
 // final authFormController =
 //     ChangeNotifierProvider((ref) => MyAuthFormController());
 

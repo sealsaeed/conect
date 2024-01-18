@@ -1,6 +1,14 @@
 {
-    "login" : "تسجيل الدخول ",
-    "register" : "تسجيل مستخدم جديد",
-    "email" : "",
-    "username" : ""
+  "login": "تسجيل الدخول ",
+  "register": "تسجيل مستخدم جديد",
+  "email": "",
+  "username": "",
+  "password": "",
+  "googleSign": "",
+  "chats": "",
+  "location": "",
+  "profile": "",
+  "photoGallery": "",
+  "cameraImage": "",
+  "cancel": ""
 }

@@ -4,5 +4,11 @@
   "email": "Email",
   "username": "Username",
   "password": "Password",
-  "googleSign": "googleSign"
+  "googleSign": "googleSign",
+  "chats": "chats",
+  "location": "location",
+  "profile": "profile",
+  "photoGallery": "Photo Gallery",
+  "cameraImage": "Camera Image",
+  "cancel": "Cancel"
 }
